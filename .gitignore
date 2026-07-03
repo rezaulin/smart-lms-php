@@ -1,0 +1,16 @@
+.env
+/vendor/
+/storage/logs/*.log
+/storage/cache/*
+!/storage/cache/.gitkeep
+/storage/temp/*
+!/storage/temp/.gitkeep
+/public/uploads/*
+!/public/uploads/.gitkeep
+composer.lock
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
