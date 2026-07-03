@@ -195,7 +195,8 @@ foreach ($routes as $route => $handler) {
 
         // Call controller
         [$controller, $method] = $handler;
-        call_user_func([$controller, $method]);
+        $instance = new $controller();
+        call_user_func([$instance, $method]);
         break;
     }
 }
